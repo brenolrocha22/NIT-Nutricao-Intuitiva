@@ -1,0 +1,566 @@
+{
+  "fonte": "Receitas escritas para o NIT. Os ingredientes apontam para o número do alimento na TACO (campo 'taco'), e as calorias de cada receita são calculadas pelo código a partir dessas quantidades. O campo 'veja_tambem' leva a uma receita parecida no site oficial da Ana Maria Braga; o conteúdo dela não é copiado.",
+  "receitas": [
+    {
+      "id": "arroz-soltinho",
+      "nome": "Arroz branco soltinho",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 25,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 4, "nome": "arroz branco cru", "gramas": 200},
+        {"taco": 107, "nome": "cebola", "gramas": 30},
+        {"taco": 82, "nome": "alho", "gramas": 5},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10}
+      ],
+      "sem_calculo": ["sal", "água quente"],
+      "preparo": [
+        "Doure a cebola e o alho picados no óleo.",
+        "Junte o arroz e mexa por 1 minuto, até os grãos ficarem brilhantes.",
+        "Cubra com o dobro de água quente, acerte o sal e cozinhe em fogo baixo, com a tampa entreaberta, até secar.",
+        "Desligue, tampe e deixe descansar 5 minutos antes de soltar com um garfo."
+      ],
+      "veja_tambem": null
+    },
+    {
+      "id": "feijao-carioca-caseiro",
+      "nome": "Feijão carioca caseiro",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 60,
+      "porcoes": 6,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 562, "nome": "feijão carioca cru", "gramas": 250},
+        {"taco": 107, "nome": "cebola", "gramas": 50},
+        {"taco": 82, "nome": "alho", "gramas": 8},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10}
+      ],
+      "sem_calculo": ["sal", "folha de louro", "água"],
+      "preparo": [
+        "Deixe o feijão de molho por pelo menos 8 horas e descarte a água.",
+        "Cozinhe na pressão com água nova e o louro por cerca de 30 minutos depois que a panela pegar pressão.",
+        "Doure a cebola e o alho no óleo, junte uma concha do feijão, amasse e devolva tudo para a panela.",
+        "Acerte o sal e deixe ferver mais 10 minutos para engrossar o caldo."
+      ],
+      "veja_tambem": null
+    },
+    {
+      "id": "baiao-de-dois",
+      "nome": "Baião de dois simples",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 40,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 4, "nome": "arroz branco cru", "gramas": 150},
+        {"taco": 563, "nome": "feijão-fradinho cozido", "gramas": 300},
+        {"taco": 107, "nome": "cebola", "gramas": 60},
+        {"taco": 82, "nome": "alho", "gramas": 5},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10},
+        {"taco": 108, "nome": "cebolinha", "gramas": 10},
+        {"taco": 461, "nome": "queijo minas frescal", "gramas": 100, "opcional": true}
+      ],
+      "sem_calculo": ["sal", "coentro fresco", "água"],
+      "preparo": [
+        "Refogue a cebola e o alho no óleo.",
+        "Junte o arroz, o feijão-fradinho já cozido e água suficiente para cozinhar o arroz.",
+        "Quando o arroz estiver macio, acrescente o queijo em cubos (se for usar), a cebolinha e o coentro.",
+        "Misture com cuidado e sirva quente."
+      ],
+      "observacao": "Sem o queijo, a receita fica vegana e sem lactose.",
+      "veja_tambem": "https://anamariabraga.globo.com/receita/baiao-de-dois-da-marcela/"
+    },
+    {
+      "id": "cuscuz-com-ovo",
+      "nome": "Cuscuz nordestino com ovo",
+      "refeicoes": ["café da manhã", "jantar"],
+      "tempo_min": 20,
+      "porcoes": 3,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 33, "nome": "flocão de milho (farinha de milho amarela)", "gramas": 200},
+        {"taco": 489, "nome": "ovo", "gramas": 150},
+        {"taco": 261, "nome": "manteiga", "gramas": 10, "opcional": true}
+      ],
+      "sem_calculo": ["sal", "água"],
+      "preparo": [
+        "Hidrate o flocão com água e sal até ficar úmido como areia molhada. Espere 10 minutos.",
+        "Coloque na cuscuzeira e cozinhe no vapor por 10 a 15 minutos.",
+        "Enquanto isso, cozinhe ou frite os ovos.",
+        "Sirva o cuscuz com os ovos e, se quiser, um pouco de manteiga por cima."
+      ],
+      "observacao": "Sem a manteiga, fica sem lactose.",
+      "veja_tambem": "https://anamariabraga.globo.com/receita/cuscuz-cearense/"
+    },
+    {
+      "id": "tapioca-de-banana",
+      "nome": "Tapioca de banana com canela",
+      "refeicoes": ["café da manhã", "lanche"],
+      "tempo_min": 10,
+      "porcoes": 1,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 146, "nome": "goma de tapioca (polvilho doce)", "gramas": 60},
+        {"taco": 182, "nome": "banana-prata", "gramas": 80}
+      ],
+      "sem_calculo": ["canela em pó"],
+      "preparo": [
+        "Peneire a goma numa frigideira antiaderente aquecida, formando um disco.",
+        "Quando a goma grudar e formar uma massa, espalhe a banana em rodelas sobre metade.",
+        "Polvilhe canela, dobre ao meio e sirva."
+      ],
+      "observacao": "A TACO não tem a goma hidratada de tapioca; usamos o polvilho doce, que é a mesma fécula de mandioca, como referência.",
+      "veja_tambem": null
+    },
+    {
+      "id": "escondidinho-de-mandioca",
+      "nome": "Escondidinho de mandioca com carne moída",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 60,
+      "porcoes": 5,
+      "custo": "médio",
+      "ingredientes": [
+        {"taco": 130, "nome": "mandioca crua", "gramas": 600},
+        {"taco": 327, "nome": "carne moída (acém) crua", "gramas": 400},
+        {"taco": 107, "nome": "cebola", "gramas": 80},
+        {"taco": 82, "nome": "alho", "gramas": 8},
+        {"taco": 157, "nome": "tomate", "gramas": 150},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10},
+        {"taco": 108, "nome": "cebolinha", "gramas": 10}
+      ],
+      "sem_calculo": ["sal", "pimenta-do-reino", "água do cozimento"],
+      "preparo": [
+        "Cozinhe a mandioca em água com sal até ficar bem macia e retire os fios do meio.",
+        "Amasse a mandioca com um pouco da água do cozimento até virar um purê.",
+        "Refogue a cebola e o alho no óleo, junte a carne e deixe dourar. Acrescente o tomate picado e cozinhe até secar.",
+        "Monte num refratário: metade do purê, a carne e o restante do purê. Leve ao forno a 200 °C por 20 minutos e finalize com cebolinha."
+      ],
+      "veja_tambem": "https://anamariabraga.globo.com/receita/escondidinho-de-aipim-com-carne/"
+    },
+    {
+      "id": "frango-com-quiabo",
+      "nome": "Frango com quiabo",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 50,
+      "porcoes": 4,
+      "custo": "médio",
+      "ingredientes": [
+        {"taco": 399, "nome": "coxa de frango sem pele crua", "gramas": 600},
+        {"taco": 147, "nome": "quiabo", "gramas": 300},
+        {"taco": 107, "nome": "cebola", "gramas": 80},
+        {"taco": 82, "nome": "alho", "gramas": 8},
+        {"taco": 157, "nome": "tomate", "gramas": 150},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 15}
+      ],
+      "sem_calculo": ["sal", "limão para temperar", "água"],
+      "preparo": [
+        "Tempere o frango com alho, sal e limão.",
+        "Doure o frango no óleo, junte a cebola e o tomate e cozinhe com um pouco de água até a carne ficar macia.",
+        "Em outra panela, refogue o quiabo cortado em rodelas em fogo alto, sem tampa, até perder a baba.",
+        "Junte o quiabo ao frango nos últimos 5 minutos."
+      ],
+      "observacao": "Fica ótimo com angu de fubá, uma combinação tradicional mineira.",
+      "veja_tambem": "https://anamariabraga.globo.com/receita/frango-baiano-com-quiabo/"
+    },
+    {
+      "id": "angu-de-fuba",
+      "nome": "Angu de fubá",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 25,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 43, "nome": "fubá", "gramas": 150}
+      ],
+      "sem_calculo": ["sal", "água"],
+      "preparo": [
+        "Dissolva o fubá em 2 xícaras de água fria, para não empelotar.",
+        "Leve ao fogo com mais 2 xícaras de água e sal, mexendo sem parar.",
+        "Quando ferver, abaixe o fogo e cozinhe por 15 a 20 minutos, mexendo de vez em quando, até soltar do fundo da panela."
+      ],
+      "veja_tambem": "https://anamariabraga.globo.com/receita/angu-com-linguica/"
+    },
+    {
+      "id": "couve-refogada",
+      "nome": "Couve refogada no alho",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 10,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 115, "nome": "couve-manteiga", "gramas": 200},
+        {"taco": 82, "nome": "alho", "gramas": 5},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 5}
+      ],
+      "sem_calculo": ["sal"],
+      "preparo": [
+        "Corte a couve em tiras bem finas.",
+        "Doure o alho no óleo, junte a couve e mexa em fogo alto por 2 a 3 minutos, só até murchar.",
+        "Acerte o sal e sirva na hora."
+      ],
+      "veja_tambem": null
+    },
+    {
+      "id": "sopa-de-lentilha",
+      "nome": "Sopa de lentilha com legumes",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 40,
+      "porcoes": 5,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 578, "nome": "lentilha crua", "gramas": 200},
+        {"taco": 110, "nome": "cenoura", "gramas": 100},
+        {"taco": 92, "nome": "batata", "gramas": 150},
+        {"taco": 107, "nome": "cebola", "gramas": 60},
+        {"taco": 82, "nome": "alho", "gramas": 5},
+        {"taco": 157, "nome": "tomate", "gramas": 100},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10}
+      ],
+      "sem_calculo": ["sal", "cominho", "água"],
+      "preparo": [
+        "Refogue a cebola e o alho no óleo e junte o tomate picado.",
+        "Acrescente a lentilha lavada, a cenoura e a batata em cubos e cubra com água.",
+        "Cozinhe por 25 a 30 minutos, até a lentilha ficar macia. Tempere com sal e cominho."
+      ],
+      "veja_tambem": "https://anamariabraga.globo.com/receita/sopa-de-lentilha-0000/"
+    },
+    {
+      "id": "omelete-de-legumes",
+      "nome": "Omelete de legumes",
+      "refeicoes": ["café da manhã", "jantar"],
+      "tempo_min": 15,
+      "porcoes": 2,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 489, "nome": "ovo", "gramas": 150},
+        {"taco": 157, "nome": "tomate", "gramas": 60},
+        {"taco": 107, "nome": "cebola", "gramas": 30},
+        {"taco": 71, "nome": "abobrinha", "gramas": 60},
+        {"taco": 153, "nome": "salsa", "gramas": 5},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 5}
+      ],
+      "sem_calculo": ["sal"],
+      "preparo": [
+        "Bata os ovos com sal.",
+        "Refogue rapidamente a cebola, o tomate e a abobrinha picados no óleo.",
+        "Despeje os ovos por cima, tampe e cozinhe em fogo baixo até firmar. Finalize com salsa."
+      ],
+      "veja_tambem": "https://anamariabraga.globo.com/receita/omelete-a-vapor/"
+    },
+    {
+      "id": "farofa-de-cenoura-e-couve",
+      "nome": "Farofa de cenoura e couve",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 15,
+      "porcoes": 6,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 122, "nome": "farinha de mandioca torrada", "gramas": 150},
+        {"taco": 110, "nome": "cenoura ralada", "gramas": 100},
+        {"taco": 115, "nome": "couve-manteiga", "gramas": 60},
+        {"taco": 107, "nome": "cebola", "gramas": 50},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 15}
+      ],
+      "sem_calculo": ["sal"],
+      "preparo": [
+        "Doure a cebola no óleo e junte a cenoura ralada até amolecer.",
+        "Acrescente a couve em tiras finas e mexa por 1 minuto.",
+        "Desligue o fogo, junte a farinha aos poucos, mexendo, e acerte o sal."
+      ],
+      "veja_tambem": null
+    },
+    {
+      "id": "quibebe",
+      "nome": "Quibebe (purê de abóbora refogada)",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 30,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 65, "nome": "abóbora cabotiá crua", "gramas": 600},
+        {"taco": 107, "nome": "cebola", "gramas": 60},
+        {"taco": 82, "nome": "alho", "gramas": 5},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10},
+        {"taco": 108, "nome": "cebolinha", "gramas": 10}
+      ],
+      "sem_calculo": ["sal", "pimenta-de-cheiro", "água"],
+      "preparo": [
+        "Refogue a cebola e o alho no óleo.",
+        "Junte a abóbora em cubos e um pouco de água, tampe e cozinhe até desmanchar.",
+        "Amasse com a colher, acerte o sal e finalize com cebolinha."
+      ],
+      "observacao": "Prato de origem afro-indígena, comum no Nordeste e em Minas Gerais.",
+      "veja_tambem": null
+    },
+    {
+      "id": "salada-de-grao-de-bico",
+      "nome": "Salada de grão-de-bico",
+      "refeicoes": ["almoço", "jantar", "marmita"],
+      "tempo_min": 20,
+      "porcoes": 3,
+      "custo": "médio",
+      "ingredientes": [
+        {"taco": 575, "nome": "grão-de-bico cru (depois de cozido)", "gramas": 150},
+        {"taco": 157, "nome": "tomate", "gramas": 150},
+        {"taco": 142, "nome": "pepino", "gramas": 100},
+        {"taco": 107, "nome": "cebola", "gramas": 50},
+        {"taco": 153, "nome": "salsa", "gramas": 10},
+        {"taco": 260, "nome": "azeite de oliva", "gramas": 15},
+        {"taco": 220, "nome": "limão", "gramas": 20}
+      ],
+      "sem_calculo": ["sal"],
+      "preparo": [
+        "Deixe o grão-de-bico de molho por 8 horas e cozinhe na pressão por 20 minutos. Escorra e espere esfriar.",
+        "Pique o tomate, o pepino, a cebola e a salsa.",
+        "Misture tudo e tempere com azeite, limão e sal."
+      ],
+      "observacao": "O peso do grão-de-bico é o do grão cru, antes de cozinhar.",
+      "veja_tambem": "https://anamariabraga.globo.com/receita/guisado-de-grao-de-bico/"
+    },
+    {
+      "id": "inhame-com-ovo",
+      "nome": "Inhame cozido com ovo",
+      "refeicoes": ["café da manhã", "jantar"],
+      "tempo_min": 25,
+      "porcoes": 2,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 126, "nome": "inhame cru", "gramas": 300},
+        {"taco": 489, "nome": "ovo", "gramas": 100}
+      ],
+      "sem_calculo": ["sal", "água"],
+      "preparo": [
+        "Descasque o inhame, corte em pedaços e cozinhe em água com sal até ficar macio.",
+        "Cozinhe os ovos por 10 minutos.",
+        "Sirva o inhame quente com os ovos."
+      ],
+      "observacao": "Café da manhã tradicional no Nordeste.",
+      "veja_tambem": null
+    },
+    {
+      "id": "mingau-de-aveia-com-banana",
+      "nome": "Mingau de aveia com banana",
+      "refeicoes": ["café da manhã", "lanche"],
+      "tempo_min": 10,
+      "porcoes": 1,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 7, "nome": "aveia em flocos", "gramas": 40},
+        {"taco": 179, "nome": "banana-nanica", "gramas": 80},
+        {"taco": 582, "nome": "bebida de soja", "gramas": 200}
+      ],
+      "sem_calculo": ["canela em pó"],
+      "preparo": [
+        "Leve a aveia e a bebida de soja ao fogo baixo, mexendo, até engrossar.",
+        "Amasse metade da banana e misture ao mingau.",
+        "Sirva com o restante da banana em rodelas e canela."
+      ],
+      "observacao": "Feito com bebida de soja porque a TACO não tem valores para o leite de vaca (as análises estão sendo reavaliadas). Pode trocar pelo leite que preferir.",
+      "veja_tambem": "https://anamariabraga.globo.com/receita/mingau-de-aveia-da-sarah-menezes/"
+    },
+    {
+      "id": "moqueca-de-sardinha",
+      "nome": "Moqueca de sardinha",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 35,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 321, "nome": "sardinha fresca limpa", "gramas": 500},
+        {"taco": 157, "nome": "tomate", "gramas": 200},
+        {"taco": 107, "nome": "cebola", "gramas": 100},
+        {"taco": 144, "nome": "pimentão", "gramas": 80},
+        {"taco": 523, "nome": "leite de coco", "gramas": 100},
+        {"taco": 259, "nome": "azeite de dendê", "gramas": 15},
+        {"taco": 220, "nome": "limão", "gramas": 20}
+      ],
+      "sem_calculo": ["sal", "coentro fresco"],
+      "preparo": [
+        "Tempere as sardinhas com limão e sal.",
+        "Numa panela larga, faça camadas de cebola, tomate e pimentão em rodelas e coloque as sardinhas por cima.",
+        "Regue com o leite de coco e o dendê, tampe e cozinhe em fogo baixo por 15 a 20 minutos, sem mexer.",
+        "Finalize com coentro."
+      ],
+      "observacao": "A sardinha é um dos peixes mais baratos do Brasil e é rica em ômega-3.",
+      "veja_tambem": "https://anamariabraga.globo.com/receita/moqueca-capixaba-da-ana-1407/"
+    },
+    {
+      "id": "feijao-tropeiro",
+      "nome": "Feijão-tropeiro com ovo e couve",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 25,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 561, "nome": "feijão carioca cozido e escorrido", "gramas": 400},
+        {"taco": 122, "nome": "farinha de mandioca torrada", "gramas": 80},
+        {"taco": 489, "nome": "ovo", "gramas": 100},
+        {"taco": 115, "nome": "couve-manteiga", "gramas": 80},
+        {"taco": 107, "nome": "cebola", "gramas": 60},
+        {"taco": 82, "nome": "alho", "gramas": 5},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 15}
+      ],
+      "sem_calculo": ["sal", "cheiro-verde"],
+      "preparo": [
+        "Faça ovos mexidos e reserve.",
+        "Refogue a cebola e o alho no óleo, junte o feijão escorrido e aqueça.",
+        "Acrescente a farinha aos poucos, mexendo, depois os ovos e a couve em tiras finas.",
+        "Mexa por 1 minuto, acerte o sal e sirva."
+      ],
+      "observacao": "Versão econômica, sem bacon e linguiça.",
+      "veja_tambem": "https://anamariabraga.globo.com/receita/feijao-tropeiro/"
+    },
+    {
+      "id": "abobrinha-refogada",
+      "nome": "Abobrinha refogada com tomate",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 15,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 71, "nome": "abobrinha", "gramas": 400},
+        {"taco": 157, "nome": "tomate", "gramas": 150},
+        {"taco": 107, "nome": "cebola", "gramas": 50},
+        {"taco": 82, "nome": "alho", "gramas": 5},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10}
+      ],
+      "sem_calculo": ["sal", "orégano"],
+      "preparo": [
+        "Refogue a cebola e o alho no óleo.",
+        "Junte o tomate picado e, depois, a abobrinha em cubos.",
+        "Cozinhe com a panela tampada por 8 minutos, até a abobrinha ficar macia mas firme. Tempere com sal e orégano."
+      ],
+      "veja_tambem": null
+    },
+    {
+      "id": "arroz-com-brocolis",
+      "nome": "Arroz com brócolis",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 30,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 4, "nome": "arroz branco cru", "gramas": 200},
+        {"taco": 101, "nome": "brócolis", "gramas": 200},
+        {"taco": 82, "nome": "alho", "gramas": 8},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10}
+      ],
+      "sem_calculo": ["sal", "água quente"],
+      "preparo": [
+        "Cozinhe o arroz como de costume.",
+        "Doure bastante alho no óleo e junte o brócolis picado por 2 minutos.",
+        "Misture o brócolis ao arroz pronto."
+      ],
+      "veja_tambem": "https://anamariabraga.globo.com/receita/arroz-com-brocolis-salada-de-brocolis-e-cenoura-crocante-160318/"
+    },
+    {
+      "id": "batata-doce-assada",
+      "nome": "Batata-doce assada com alho",
+      "refeicoes": ["almoço", "jantar", "lanche"],
+      "tempo_min": 40,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 89, "nome": "batata-doce", "gramas": 500},
+        {"taco": 260, "nome": "azeite de oliva", "gramas": 15},
+        {"taco": 82, "nome": "alho", "gramas": 8}
+      ],
+      "sem_calculo": ["sal", "alecrim"],
+      "preparo": [
+        "Corte a batata-doce com casca em palitos.",
+        "Misture com azeite, alho amassado, sal e alecrim.",
+        "Asse a 200 °C por 30 a 35 minutos, virando na metade do tempo."
+      ],
+      "veja_tambem": null
+    },
+    {
+      "id": "panqueca-de-banana",
+      "nome": "Panqueca de banana e aveia",
+      "refeicoes": ["café da manhã", "lanche"],
+      "tempo_min": 10,
+      "porcoes": 1,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 179, "nome": "banana-nanica", "gramas": 100},
+        {"taco": 489, "nome": "ovo", "gramas": 100},
+        {"taco": 7, "nome": "aveia em flocos", "gramas": 20}
+      ],
+      "sem_calculo": ["canela em pó"],
+      "preparo": [
+        "Amasse a banana e misture com os ovos e a aveia.",
+        "Despeje pequenas porções numa frigideira antiaderente em fogo baixo.",
+        "Vire quando a parte de baixo dourar."
+      ],
+      "veja_tambem": null
+    },
+    {
+      "id": "galinhada",
+      "nome": "Galinhada com milho",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 50,
+      "porcoes": 5,
+      "custo": "médio",
+      "ingredientes": [
+        {"taco": 409, "nome": "peito de frango sem pele cru", "gramas": 400},
+        {"taco": 4, "nome": "arroz branco cru", "gramas": 250},
+        {"taco": 44, "nome": "milho-verde", "gramas": 100},
+        {"taco": 107, "nome": "cebola", "gramas": 80},
+        {"taco": 82, "nome": "alho", "gramas": 8},
+        {"taco": 157, "nome": "tomate", "gramas": 100},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 15},
+        {"taco": 108, "nome": "cebolinha", "gramas": 10}
+      ],
+      "sem_calculo": ["sal", "açafrão-da-terra", "água quente"],
+      "preparo": [
+        "Doure o frango em cubos no óleo e reserve.",
+        "Na mesma panela, refogue cebola, alho e tomate e junte o açafrão.",
+        "Volte o frango, acrescente o arroz, o milho e o dobro de água quente. Cozinhe até secar.",
+        "Finalize com cebolinha."
+      ],
+      "veja_tambem": "https://anamariabraga.globo.com/receita/galinhada-0001/"
+    },
+    {
+      "id": "chuchu-refogado",
+      "nome": "Chuchu refogado",
+      "refeicoes": ["almoço", "jantar"],
+      "tempo_min": 20,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 113, "nome": "chuchu", "gramas": 400},
+        {"taco": 107, "nome": "cebola", "gramas": 50},
+        {"taco": 82, "nome": "alho", "gramas": 5},
+        {"taco": 272, "nome": "óleo de soja", "gramas": 10},
+        {"taco": 153, "nome": "salsa", "gramas": 5}
+      ],
+      "sem_calculo": ["sal"],
+      "preparo": [
+        "Descasque o chuchu e corte em cubos.",
+        "Refogue a cebola e o alho no óleo e junte o chuchu.",
+        "Tampe e cozinhe por 10 minutos no próprio vapor. Finalize com salsa."
+      ],
+      "veja_tambem": null
+    },
+    {
+      "id": "salada-de-repolho",
+      "nome": "Salada de repolho com cenoura",
+      "refeicoes": ["almoço", "jantar", "marmita"],
+      "tempo_min": 10,
+      "porcoes": 4,
+      "custo": "baixo",
+      "ingredientes": [
+        {"taco": 149, "nome": "repolho", "gramas": 200},
+        {"taco": 110, "nome": "cenoura", "gramas": 100},
+        {"taco": 220, "nome": "limão", "gramas": 20},
+        {"taco": 260, "nome": "azeite de oliva", "gramas": 10}
+      ],
+      "sem_calculo": ["sal"],
+      "preparo": [
+        "Fatie o repolho bem fino e rale a cenoura.",
+        "Tempere com limão, azeite e sal na hora de servir."
+      ],
+      "veja_tambem": null
+    }
+  ]
+}

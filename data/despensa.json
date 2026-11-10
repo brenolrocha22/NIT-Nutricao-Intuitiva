@@ -1,0 +1,42 @@
+{
+  "aviso": "Despensas fictícias para testar o acompanhamento da feira e a previsão da próxima compra. 'comprado_g' é o que entrou na última feira e 'restante_g' é o que sobrou na data de referência.",
+  "data_referencia": "2026-11-10",
+  "despensas": {
+    "alex": {
+      "data_ultima_feira": "2026-11-01",
+      "itens": [
+        {"taco": 4, "nome": "arroz branco", "comprado_g": 2000, "restante_g": 1100},
+        {"taco": 562, "nome": "feijão carioca", "comprado_g": 1000, "restante_g": 550},
+        {"taco": 409, "nome": "peito de frango", "comprado_g": 1500, "restante_g": 300},
+        {"taco": 489, "nome": "ovos", "comprado_g": 1500, "restante_g": 600},
+        {"taco": 179, "nome": "banana-nanica", "comprado_g": 1200, "restante_g": 0},
+        {"taco": 157, "nome": "tomate", "comprado_g": 1000, "restante_g": 350},
+        {"taco": 71, "nome": "abobrinha", "comprado_g": 600, "restante_g": 600}
+      ]
+    },
+    "juliana": {
+      "data_ultima_feira": "2026-10-25",
+      "itens": [
+        {"taco": 4, "nome": "arroz branco", "comprado_g": 5000, "restante_g": 2200},
+        {"taco": 562, "nome": "feijão carioca", "comprado_g": 2000, "restante_g": 700},
+        {"taco": 578, "nome": "lentilha", "comprado_g": 500, "restante_g": 300},
+        {"taco": 122, "nome": "farinha de mandioca", "comprado_g": 1000, "restante_g": 650},
+        {"taco": 130, "nome": "mandioca", "comprado_g": 2000, "restante_g": 0},
+        {"taco": 65, "nome": "abóbora cabotiá", "comprado_g": 2500, "restante_g": 900},
+        {"taco": 182, "nome": "banana-prata", "comprado_g": 3000, "restante_g": 400},
+        {"taco": 115, "nome": "couve", "comprado_g": 400, "restante_g": 0}
+      ]
+    },
+    "fernanda": {
+      "data_ultima_feira": "2026-11-03",
+      "itens": [
+        {"taco": 4, "nome": "arroz branco", "comprado_g": 2000, "restante_g": 900},
+        {"taco": 33, "nome": "flocão de milho", "comprado_g": 1000, "restante_g": 400},
+        {"taco": 489, "nome": "ovos", "comprado_g": 1800, "restante_g": 500},
+        {"taco": 89, "nome": "batata-doce", "comprado_g": 2000, "restante_g": 600},
+        {"taco": 321, "nome": "sardinha", "comprado_g": 1000, "restante_g": 0},
+        {"taco": 146, "nome": "goma de tapioca", "comprado_g": 1000, "restante_g": 550}
+      ]
+    }
+  }
+}

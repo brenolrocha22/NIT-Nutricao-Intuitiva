@@ -1,0 +1,188 @@
+{
+  "como_funciona": "Cada restrição lista grupos inteiros da TACO e palavras-chave procuradas como palavras inteiras na descrição do alimento (sem diferenciar maiúsculas e acentos). Um alimento é proibido se pertencer a um dos grupos ou tiver uma das palavras. 'excecoes' libera alimentos que uma palavra-chave pegaria por engano (ex.: 'leite de coco' não tem lactose). As palavras também são procuradas no nome do ingrediente e no texto que a IA escrever, para validar a resposta final.",
+  "aviso": "Grupos da TACO não bastam sozinhos: 'Pão de queijo' e 'Biscoito de polvilho' estão no grupo de verduras, por isso as palavras-chave são obrigatórias. E a busca precisa ser por palavra inteira: buscando pedaços, 'quibe' bloquearia 'Quibebe' e 'mel' bloquearia 'Melado'.",
+  "restricoes": {
+    "sem_lactose": {
+      "nome": "Sem lactose",
+      "grupos": [
+        "Leite e derivados"
+      ],
+      "palavras": [
+        "leite",
+        "queijo",
+        "manteiga",
+        "creme de leite",
+        "requeijão",
+        "iogurte",
+        "nata",
+        "chantilly",
+        "doce de leite",
+        "leite condensado"
+      ],
+      "excecoes": [
+        "leite, de coco",
+        "leite de coco",
+        "soja, extrato",
+        "bebida de soja",
+        "couve, manteiga",
+        "couve-manteiga"
+      ]
+    },
+    "sem_gluten": {
+      "nome": "Sem glúten (doença celíaca)",
+      "grupos": [],
+      "palavras": [
+        "trigo",
+        "centeio",
+        "cevada",
+        "malte",
+        "aveia",
+        "pão",
+        "macarrão",
+        "biscoito",
+        "bolo",
+        "farinha de rosca",
+        "farinha, de rosca",
+        "cerveja",
+        "pizza",
+        "lasanha",
+        "nhoque",
+        "empada",
+        "pastel",
+        "coxinha",
+        "quibe",
+        "esfiha",
+        "cuscuz, paulista",
+        "farinha láctea",
+        "cereais, mistura"
+      ],
+      "excecoes": [
+        "biscoito, polvilho",
+        "pão, de queijo",
+        "bolo de mandioca",
+        "fruta-pão"
+      ],
+      "nota": "Aveia entra como proibida porque, no Brasil, quase toda aveia é contaminada com trigo no processamento. Só é segura com selo 'sem glúten'."
+    },
+    "vegetariano": {
+      "nome": "Vegetariano",
+      "grupos": [
+        "Carnes e derivados",
+        "Pescados e frutos do mar"
+      ],
+      "palavras": [
+        "carne",
+        "frango",
+        "peixe",
+        "sardinha",
+        "atum",
+        "bacon",
+        "linguiça",
+        "salsicha",
+        "presunto",
+        "mortadela",
+        "salame",
+        "toucinho",
+        "banha",
+        "camarão",
+        "caldo de carne",
+        "caldo de galinha",
+        "gelatina",
+        "carnes",
+        "peixes"
+      ],
+      "excecoes": []
+    },
+    "vegano": {
+      "nome": "Vegano",
+      "herda": [
+        "vegetariano",
+        "sem_lactose"
+      ],
+      "grupos": [
+        "Ovos e derivados"
+      ],
+      "palavras": [
+        "ovo",
+        "ovos",
+        "mel",
+        "omelete",
+        "maionese"
+      ],
+      "excecoes": [
+        "tofu"
+      ]
+    },
+    "alergia_amendoim": {
+      "nome": "Alergia a amendoim",
+      "grupos": [],
+      "palavras": [
+        "amendoim",
+        "paçoca",
+        "pé-de-moleque",
+        "pé de moleque",
+        "amendoins"
+      ],
+      "excecoes": []
+    },
+    "alergia_frutos_do_mar": {
+      "nome": "Alergia a frutos do mar (crustáceos e moluscos)",
+      "grupos": [],
+      "palavras": [
+        "camarão",
+        "caranguejo",
+        "siri",
+        "lagosta",
+        "marisco",
+        "mexilhão",
+        "ostra",
+        "lula",
+        "polvo",
+        "sururu"
+      ],
+      "excecoes": []
+    },
+    "alergia_ovo": {
+      "nome": "Alergia a ovo",
+      "grupos": [
+        "Ovos e derivados"
+      ],
+      "palavras": [
+        "ovo",
+        "ovos",
+        "omelete",
+        "maionese"
+      ],
+      "excecoes": []
+    },
+    "alergia_castanhas": {
+      "nome": "Alergia a castanhas e nozes",
+      "grupos": [
+        "Nozes e sementes"
+      ],
+      "palavras": [
+        "castanha",
+        "noz",
+        "nozes",
+        "amêndoa",
+        "avelã",
+        "pistache",
+        "macadâmia"
+      ],
+      "excecoes": []
+    }
+  },
+  "encaminhamento_nutricionista": {
+    "explicacao": "Condições em que o NIT não monta plano alimentar e orienta a procurar um nutricionista. Receitas, lista de feira e despensa continuam disponíveis.",
+    "condicoes": {
+      "gestante": "gestação",
+      "lactante": "amamentação",
+      "diabetes": "diabetes",
+      "doenca_renal": "doença renal",
+      "doenca_cardiaca": "doença cardíaca",
+      "transtorno_alimentar": "transtorno alimentar (atual ou passado)",
+      "medicacao": "uso de medicação que interfere na alimentação",
+      "menor_de_18": "menos de 18 anos"
+    }
+  }
+}

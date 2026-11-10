@@ -1,0 +1,43 @@
+{
+  "aviso": "O NIT só indica fontes listadas aqui, com o link oficial. Ele não inventa endereços: para achar um local perto da pessoa, usa a localização (com autorização) ou a cidade digitada e indica o mapa ou o site oficial da fonte.",
+  "verificado_em": "2026-11-10",
+  "fontes": [
+    {
+      "id": "feiras_organicas_idec",
+      "nome": "Mapa de Feiras Orgânicas (Idec)",
+      "o_que_e": "Mapa colaborativo do Instituto Brasileiro de Defesa do Consumidor com feiras orgânicas e agroecológicas de todo o Brasil.",
+      "como_usar": "Abrir o mapa e buscar pela cidade ou pelo CEP.",
+      "url": "https://feirasorganicas.org.br/"
+    },
+    {
+      "id": "armazem_do_campo",
+      "nome": "Armazém do Campo (MST)",
+      "o_que_e": "Rede de lojas do Movimento dos Trabalhadores Rurais Sem Terra que vende alimentos produzidos em assentamentos da reforma agrária, muitos deles agroecológicos.",
+      "como_usar": "Consultar no site as lojas e a venda on-line disponíveis na região.",
+      "url": "https://armazemdocampo.com.br/"
+    },
+    {
+      "id": "arroz_organico_mst",
+      "nome": "Arroz orgânico do MST",
+      "o_que_e": "Segundo o MST, os assentamentos do Rio Grande do Sul têm a maior produção de arroz orgânico da América Latina. As enchentes de 2024 atingiram parte dessas lavouras.",
+      "como_usar": "O próprio MST mantém uma página sobre onde encontrar o arroz.",
+      "url": "https://mst.org.br/2023/03/15/onde-encontrar-o-arroz-organico-do-mst/",
+      "fontes_da_afirmacao": [
+        "https://mst.org.br/2023/03/17/mst-reune-4-mil-pessoas-para-celebrar-a-maior-producao-de-arroz-organico-da-america-latina/",
+        "https://mst.org.br/2024/05/09/enchente-no-sul-arrasa-lavouras-de-arroz-organico-do-mst/"
+      ]
+    },
+    {
+      "id": "sazonalidade_ceagesp",
+      "nome": "Sazonalidade de compras (CEAGESP)",
+      "o_que_e": "Calendário da Companhia de Entrepostos e Armazéns Gerais de São Paulo com os alimentos de cada época do ano, quando costumam estar mais baratos.",
+      "como_usar": "Consultar o mês atual antes de montar a lista de feira.",
+      "url": "https://ceagesp.gov.br/sala-imprensa/sazonalidade-de-compras/"
+    }
+  ],
+  "dicas_gerais": [
+    "Feiras livres costumam baixar os preços no fim do horário (a 'hora da xepa').",
+    "Comprar diretamente de quem produz, em feiras da agricultura familiar, reduz o preço e deixa a renda com quem planta.",
+    "Alimentos da época, comprados em feira, costumam sair mais baratos que no supermercado."
+  ]
+}

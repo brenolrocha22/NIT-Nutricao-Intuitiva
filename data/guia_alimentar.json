@@ -1,0 +1,28 @@
+{
+  "fonte": {
+    "titulo": "Guia Alimentar para a População Brasileira, 2ª edição",
+    "autor": "Ministério da Saúde",
+    "ano": 2014,
+    "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+    "paginas_dez_passos": "125 a 128"
+  },
+  "regra_de_ouro": "Prefira sempre alimentos in natura ou minimamente processados e preparações culinárias a alimentos ultraprocessados.",
+  "dez_passos": [
+    {"n": 1, "titulo": "Fazer de alimentos in natura ou minimamente processados a base da alimentação", "como_o_nit_usa": "Receitas e listas de feira partem de grãos, raízes, legumes, verduras, frutas, ovos e carnes, não de produtos prontos."},
+    {"n": 2, "titulo": "Utilizar óleos, gorduras, sal e açúcar em pequenas quantidades ao temperar e cozinhar alimentos e criar preparações culinárias", "como_o_nit_usa": "As receitas usam pouco óleo (5 a 15 g por receita inteira) e o sal fica 'a gosto'."},
+    {"n": 3, "titulo": "Limitar o consumo de alimentos processados", "como_o_nit_usa": "Conservas, queijos e pães aparecem como complemento, não como base."},
+    {"n": 4, "titulo": "Evitar o consumo de alimentos ultraprocessados", "como_o_nit_usa": "O NIT não sugere biscoitos recheados, refrigerantes, salgadinhos ou macarrão instantâneo, e explica o motivo sem culpa quando a pessoa conta que comeu."},
+    {"n": 5, "titulo": "Comer com regularidade e atenção, em ambientes apropriados e, sempre que possível, com companhia", "como_o_nit_usa": "O checklist do dia acompanha os horários das refeições."},
+    {"n": 6, "titulo": "Fazer compras em locais que ofertem variedades de alimentos in natura ou minimamente processados", "como_o_nit_usa": "Indica feiras, a agricultura familiar e a reforma agrária (ver onde_comprar.json)."},
+    {"n": 7, "titulo": "Desenvolver, exercitar e partilhar habilidades culinárias", "como_o_nit_usa": "Receitas simples, com passo a passo curto, para quem está começando."},
+    {"n": 8, "titulo": "Planejar o uso do tempo para dar à alimentação o espaço que ela merece", "como_o_nit_usa": "Lista de feira de 15 ou 30 dias, despensa e previsão da próxima compra."},
+    {"n": 9, "titulo": "Dar preferência, quando fora de casa, a locais que servem refeições feitas na hora", "como_o_nit_usa": "Quando a pessoa vai comer fora, sugere comida a quilo ou prato feito em vez de fast-food."},
+    {"n": 10, "titulo": "Ser crítico quanto a informações, orientações e mensagens sobre alimentação veiculadas em propagandas comerciais", "como_o_nit_usa": "Não recomenda 'superalimentos' caros nem produtos de marca, e explica quando uma promessa de propaganda não tem base."}
+  ],
+  "principios_do_nit": [
+    "Comer bem não exige alimentos importados ou caros: arroz, feijão, mandioca, milho, ovos, frutas e verduras da época são a base de uma alimentação saudável.",
+    "Valorizar a cultura alimentar brasileira, em especial os alimentos e preparações de origem indígena e afro-brasileira, como mandioca, milho, feijão, quiabo, inhame, abóbora, cuscuz, angu e quibebe.",
+    "Nunca tratar a comida do dia a dia das famílias de baixa renda como inferior ou 'pobre'.",
+    "Preferir alimentos da época, que costumam estar mais baratos e frescos."
+  ]
+}
