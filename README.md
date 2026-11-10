@@ -17,10 +17,11 @@ Assistente de alimentação com IA generativa: cria receitas com o que você já
 | 3 | Lista de feira | Gerada a partir do plano, para 15 ou 30 dias, à sua escolha |
 | 4 | Despensa | O que foi comprado entra, o que foi consumido sai |
 | 5 | Checklist do dia | Refeições feitas e copos de água |
-| 6 | Previsão da próxima feira | Calculada pelo ritmo de consumo de cada item da despensa |
-| 7 | Gastos reais | Você envia a foto do cupom fiscal, confere os itens lidos e o NIT calcula o custo médio da feira só com preços que você realmente pagou |
-| 8 | Pontos e conquistas | Pontos por cumprir as tarefas do dia |
-| 9 | Uso no celular | Interface que funciona no navegador do celular |
+| 6 | Contador de calorias | Por descrição e peso ("150 g de arroz branco cozido"), com valores da TACO, ou pela foto da tabela nutricional da embalagem. Nos dois casos, você confere os dados antes de registrar |
+| 7 | Previsão da próxima feira | Calculada pelo ritmo de consumo de cada item da despensa |
+| 8 | Gastos reais | Você envia a foto do cupom fiscal, confere os itens lidos e o NIT calcula o custo médio da feira só com preços que você realmente pagou |
+| 9 | Pontos e conquistas | Pontos por cumprir as tarefas do dia |
+| 10 | Uso no celular | Interface que funciona no navegador do celular |
 
 ### Níveis de dedicação
 
@@ -33,7 +34,7 @@ Assistente de alimentação com IA generativa: cria receitas com o que você já
 
 ### Princípios
 
-- **Números vêm de dados, não da IA.** Valores nutricionais saem da Tabela Brasileira de Composição de Alimentos (TACO), e preços saem só dos cupons fiscais do próprio usuário. O NIT não inventa preço nem nutriente.
+- **Números vêm de dados, não da IA.** Valores nutricionais saem da Tabela Brasileira de Composição de Alimentos (TACO) ou da tabela nutricional da embalagem, e preços saem só dos cupons fiscais do próprio usuário. O NIT não inventa preço nem nutriente, e não estima calorias pela foto do prato, porque o peso da comida não dá para medir numa imagem.
 - **Restrições são verificadas pelo código.** Um alimento proibido para a pessoa é retirado antes de qualquer sugestão chegar à IA.
 - **Comida de verdade e acessível.** O NIT segue o Guia Alimentar para a População Brasileira, valoriza alimentos regionais e da época, a cultura alimentar indígena e afro-brasileira, e indica feiras e produtores da agricultura familiar e da reforma agrária como opção de compra mais barata e saudável.
 
