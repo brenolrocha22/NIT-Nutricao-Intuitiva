@@ -158,7 +158,7 @@ o que eu faço hoje com o que tem em casa?
 Opa, bora usar essa abobrinha antes que ela passe do ponto? 😄
 
 Dá pra fazer um omelete de legumes com abobrinha e tomate, em uns 15 minutos.
-Cada porção tem 146 kcal e 10,7 g de proteína, pela TACO.
+Cada porção tem 146 kcal e 10,8 g de proteína, pela TACO.
 
 Só uma coisa: a receita leva cebola e salsa, que não estão na sua despensa.
 Você tem aí? Se não tiver, faz sem, que fica bom do mesmo jeito.
@@ -179,7 +179,7 @@ comi 150g de arroz branco
 ```text
 Anotado! 150 g de arroz branco cozido, pela TACO:
 - 192 kcal
-- 42,2 g de carboidrato
+- 42,1 g de carboidrato
 - 3,8 g de proteína
 
 Pra fechar sua meta de proteína hoje, vale colocar uma carne, ovo ou feijão junto.

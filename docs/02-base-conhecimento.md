@@ -101,7 +101,7 @@ DESPENSA (referência 10/11/2026, fonte: registros do Alex):
 - banana-nanica: acabou
 
 RECEITAS QUE USAM A DESPENSA (calorias calculadas pela TACO):
-- Omelete de legumes · 15 min · 146 kcal e 10,7 g de proteína por porção · falta: cebola, salsa
+- Omelete de legumes · 15 min · 146 kcal e 10,8 g de proteína por porção · falta: cebola, salsa
 - Abobrinha refogada com tomate · 15 min · 53 kcal por porção · falta: cebola, alho, óleo
 - Galinhada com milho · 50 min · 340 kcal e 22,8 g de proteína por porção · falta: milho-verde, cebola, alho, óleo, cebolinha
 
@@ -112,4 +112,4 @@ A abobrinha está parada: priorize-a.
 
 O Gemini então escreve a resposta no tom do Alex, por exemplo: *"Opa, bora usar essa abobrinha antes que ela passe do ponto? Um omelete de legumes com abobrinha e tomate sai em 15 minutos. Você tem cebola aí? Ela não está na sua despensa."*
 
-Repare que cebola, alho e óleo aparecem como "falta" porque o Alex não os registrou. Na Etapa 4, vamos tratar temperos básicos como itens que a pessoa confirma uma vez, em vez de cobrar o registro de cada dente de alho.
+Repare que cebola, alho e óleo aparecem como "falta" porque o Alex não os registrou. Na Etapa 4, os temperos básicos (cebola, alho, óleo, azeite, cebolinha e salsa) passaram a ser tratados como itens que a pessoa tem em casa, sem cobrar o registro de cada dente de alho. No aplicativo, o contexto real de cada resposta aparece em "Por trás da resposta", abaixo da mensagem do NIT.

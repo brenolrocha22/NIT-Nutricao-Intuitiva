@@ -2,6 +2,9 @@
 .env
 .streamlit/secrets.toml
 
+# Registros feitos no app (conversa, checklist, cupons): ficam só na sua máquina
+memoria/
+
 # Ambiente virtual do Python
 .venv/
 venv/

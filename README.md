@@ -45,7 +45,7 @@ Assistente de alimentação com IA generativa: cria receitas com o que você já
 | 1 | Documentação do agente | [docs/01-documentacao-agente.md](docs/01-documentacao-agente.md) | ✅ Feita |
 | 2 | Base de conhecimento | [data/](data/) e [docs/02-base-conhecimento.md](docs/02-base-conhecimento.md) | ✅ Feita |
 | 3 | Prompts do agente | [docs/03-prompts.md](docs/03-prompts.md) | ✅ Feita |
-| 4 | Aplicação funcional (Python + Streamlit + Gemini) | [src/](src/) | A fazer |
+| 4 | Aplicação funcional (Python + Streamlit + Gemini) | [src/](src/) e [tests/](tests/) | ✅ Feita |
 | 5 | Avaliação e métricas | [docs/04-metricas.md](docs/04-metricas.md) | A fazer |
 | 6 | Pitch | [docs/05-pitch.md](docs/05-pitch.md) | A fazer |
 
@@ -57,13 +57,69 @@ Estas funcionalidades exigem login, banco de dados compartilhado e regras de pri
 - **Acompanhamento por nutricionista:** profissionais se cadastram com o registro no CRN validado e acompanham remotamente os pacientes que autorizarem o acesso aos próprios dados.
 - **Privacidade:** consentimento explícito e controle de quem vê cada dado, como a LGPD exige para dados de saúde, que são dados pessoais sensíveis.
 
+## Como rodar
+
+Precisa do Python 3.12 e de uma chave gratuita do Gemini, criada no [Google AI Studio](https://aistudio.google.com/apikey).
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate            # no Linux ou macOS: source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Crie um arquivo `.env` na raiz do projeto com a sua chave:
+
+```text
+GEMINI_API_KEY=sua-chave-aqui
+```
+
+Abra o aplicativo:
+
+```bash
+streamlit run src/app.py
+```
+
+Ele abre no navegador. Para usar no celular, abra o endereço "Network URL" que o Streamlit mostra, com o celular na mesma rede Wi-Fi.
+
+Na barra lateral, escolha uma das 7 pessoas fictícias ou responda ao questionário como uma pessoa nova. Sem a chave do Gemini, a conversa e a leitura de fotos ficam desligadas, mas receitas, plano, feira, despensa, checklist, contador e pontos funcionam, porque não dependem de IA.
+
+Os testes rodam sem internet e sem chave, com um modelo falso no lugar do Gemini:
+
+```bash
+python -m pytest tests
+```
+
+### Modelo do Gemini
+
+O NIT tenta os modelos Flash do mais novo para o mais antigo (lista em [`src/nit/llm.py`](src/nit/llm.py)). Quando um está sobrecarregado, ele passa para o próximo. Para fixar um modelo, acrescente `GEMINI_MODEL=nome-do-modelo` ao `.env`.
+
 ## Estrutura
 
 ```text
 NIT/
-├── README.md     apresentação do projeto
-├── data/         base de conhecimento (alimentos, receitas, usuários fictícios)
-├── docs/         documentação de cada etapa
-├── scripts/      ferramentas de preparação dos dados (ex.: extração da TACO)
-└── src/          código da aplicação
+├── README.md          apresentação do projeto
+├── requirements.txt   bibliotecas usadas
+├── data/              base de conhecimento (alimentos, receitas, usuários fictícios)
+├── docs/              documentação de cada etapa
+├── scripts/           ferramentas de preparação dos dados (ex.: extração da TACO)
+├── src/
+│   ├── app.py         interface em Streamlit
+│   └── nit/
+│       ├── agente.py      fluxo de uma mensagem: intérprete, código, redator e validação
+│       ├── llm.py         conexão com o Gemini (um método por papel)
+│       ├── prompts.py     os três prompts de docs/03-prompts.md
+│       ├── contexto.py    monta o contexto que o redator recebe, por intenção
+│       ├── validacao.py   confere a resposta: alimento proibido e número inventado
+│       ├── triagem.py     casos que vão para o nutricionista
+│       ├── restricoes.py  o que cada pessoa não pode comer
+│       ├── nutricao.py    TACO, gasto de energia e metas do dia
+│       ├── plano.py       cardápio da semana e tamanho da porção
+│       ├── busca.py       encontra o alimento da TACO pela descrição
+│       ├── despensa.py    consumo, previsão da próxima feira e receitas com o que tem em casa
+│       ├── feira.py       lista de feira
+│       ├── gastos.py      gastos reais pelos cupons fiscais
+│       ├── pontos.py      pontos e conquistas
+│       ├── memoria.py     registros de cada pessoa em memoria/ (fora do Git)
+│       └── dados.py       leitura dos arquivos de data/
+└── tests/             testes automáticos (sem IA)
 ```
