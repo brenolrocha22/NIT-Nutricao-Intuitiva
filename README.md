@@ -44,7 +44,7 @@ Assistente de alimentação com IA generativa: cria receitas com o que você já
 | --- | --- | --- | --- |
 | 1 | Documentação do agente | [docs/01-documentacao-agente.md](docs/01-documentacao-agente.md) | ✅ Feita |
 | 2 | Base de conhecimento | [data/](data/) e [docs/02-base-conhecimento.md](docs/02-base-conhecimento.md) | ✅ Feita |
-| 3 | Prompts do agente | [docs/03-prompts.md](docs/03-prompts.md) | A fazer |
+| 3 | Prompts do agente | [docs/03-prompts.md](docs/03-prompts.md) | ✅ Feita |
 | 4 | Aplicação funcional (Python + Streamlit + Gemini) | [src/](src/) | A fazer |
 | 5 | Avaliação e métricas | [docs/04-metricas.md](docs/04-metricas.md) | A fazer |
 | 6 | Pitch | [docs/05-pitch.md](docs/05-pitch.md) | A fazer |
