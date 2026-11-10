@@ -64,5 +64,6 @@ NIT/
 ├── README.md     apresentação do projeto
 ├── data/         base de conhecimento (alimentos, receitas, usuários fictícios)
 ├── docs/         documentação de cada etapa
+├── scripts/      ferramentas de preparação dos dados (ex.: extração da TACO)
 └── src/          código da aplicação
 ```
