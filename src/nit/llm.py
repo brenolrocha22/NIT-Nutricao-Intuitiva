@@ -45,8 +45,9 @@ class Gemini:
         from google.genai import types
 
         self._tipos = types
-        # Uma tentativa por modelo: sobrecarregado, passa logo para o próximo da lista
-        opcoes = types.HttpOptions(retry_options=types.HttpRetryOptions(attempts=1))
+        # Uma tentativa por modelo e no máximo 60 s de espera: sobrecarregado ou
+        # travado, passa logo para o próximo da lista
+        opcoes = types.HttpOptions(timeout=60_000, retry_options=types.HttpRetryOptions(attempts=1))
         self.cliente = genai.Client(api_key=api_key or chave_api(), http_options=opcoes)
         preferido = modelo or os.getenv("GEMINI_MODEL", "").strip()
         self.modelos = [preferido] + [m for m in MODELOS if m != preferido] if preferido else list(MODELOS)
@@ -68,6 +69,12 @@ class Gemini:
                 return resposta.text or ""
             except errors.APIError as erro:
                 if erro.code != 429 and erro.code < 500:
+                    raise
+                ultimo_erro = erro
+            except (TimeoutError, OSError) as erro:  # tempo esgotado ou falha de rede
+                ultimo_erro = erro
+            except Exception as erro:  # noqa: BLE001 - o httpx usa exceções próprias para tempo esgotado
+                if "timeout" not in type(erro).__name__.lower():
                     raise
                 ultimo_erro = erro
         raise ultimo_erro

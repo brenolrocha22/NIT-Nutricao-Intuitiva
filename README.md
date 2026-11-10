@@ -4,7 +4,7 @@ Assistente de alimentação com IA generativa: cria receitas com o que você já
 
 > Projeto do Lab **"Construa seu Assistente Virtual com Inteligência Artificial"** da [DIO](https://www.dio.me/). O [repositório base do desafio](https://github.com/digitalinnovationone/dio-lab-bia-do-futuro) propõe um agente financeiro e permite adaptar a ideia para outro contexto. Aqui, o contexto é alimentação.
 
-🚧 **Em construção.** O projeto está sendo feito por etapas, e este README é atualizado a cada uma.
+O projeto foi feito em 6 etapas, descritas abaixo em [Como o NIT foi construído](#como-o-nit-foi-construído).
 
 > ⚠️ **O NIT não substitui um nutricionista.** Em casos de gestação, diabetes, doença renal, transtornos alimentares ou uso de medicação, ele não monta plano alimentar e orienta a procurar um profissional. Todos os usuários deste projeto são fictícios.
 
@@ -46,8 +46,40 @@ Assistente de alimentação com IA generativa: cria receitas com o que você já
 | 2 | Base de conhecimento | [data/](data/) e [docs/02-base-conhecimento.md](docs/02-base-conhecimento.md) | ✅ Feita |
 | 3 | Prompts do agente | [docs/03-prompts.md](docs/03-prompts.md) | ✅ Feita |
 | 4 | Aplicação funcional (Python + Streamlit + Gemini) | [src/](src/) e [tests/](tests/) | ✅ Feita |
-| 5 | Avaliação e métricas | [docs/04-metricas.md](docs/04-metricas.md) | A fazer |
-| 6 | Pitch | [docs/05-pitch.md](docs/05-pitch.md) | A fazer |
+| 5 | Avaliação e métricas | [docs/04-metricas.md](docs/04-metricas.md) e [scripts/avaliar.py](scripts/avaliar.py) | ✅ Feita |
+| 6 | Pitch | [docs/05-pitch.md](docs/05-pitch.md) | ✅ Roteiro pronto (falta o vídeo) |
+
+## Como o NIT foi construído
+
+### O caminho de uma mensagem
+
+```mermaid
+flowchart LR
+    M[Mensagem ou foto] --> I[Gemini: intérprete<br/>entende o pedido e devolve JSON]
+    I --> C[Código Python<br/>triagem, busca na TACO,<br/>cálculos e filtros]
+    C --> R[Gemini: redator<br/>escreve no tom da pessoa]
+    R --> V{Validação<br/>alimento proibido?<br/>número inventado?}
+    V -->|reprovada| R
+    V -->|aprovada| T[Resposta na tela]
+    T --> P[A pessoa confere e<br/>confirma o que vai ser salvo]
+```
+
+A IA aparece duas vezes, e nenhuma delas faz conta. Em cada resposta do app, "Por trás da resposta" mostra a intenção identificada e o contexto exato que o Gemini recebeu.
+
+### O processo, etapa por etapa
+
+1. **Documentação do agente.** Antes de qualquer código, defini o problema, a persona (um amigo gentil que entende de nutrição), os quatro níveis de dedicação com o tom de cada um, a arquitetura e as limitações: o NIT não substitui um nutricionista e não monta plano em casos clínicos.
+2. **Base de conhecimento.** A TACO só existe em PDF, então escrevi um [script](scripts/extrair_taco.py) que extrai os 597 alimentos e confere as calorias de cada um pela fórmula 4 × proteína + 4 × carboidrato + 9 × gordura. Depois vieram 25 receitas brasileiras e baratas, com cada ingrediente ligado a um alimento da TACO, as regras de 8 restrições e 7 pessoas fictícias, cada uma criada para testar um comportamento.
+3. **Prompts.** Separei o Gemini em três papéis (intérprete, leitor de imagens e redator), cada um com seu prompt e sua configuração, e escrevi os casos difíceis antes de programar: gestação, jejum, tentativa de furar uma restrição e pedido de preço.
+4. **Aplicação.** Primeiro, os módulos sem IA (cálculos, restrições, triagem, despensa, feira e pontos), que podem ser testados sozinhos. Depois, o fluxo com o Gemini, a validação das respostas e o app em Streamlit. Testar com o Gemini de verdade mostrou problemas que os testes sem IA não pegavam: o modelo padrão tinha sido retirado, os modelos novos ficavam sobrecarregados e a validação barrava respostas certas, como recusar o pão para quem é celíaca. Cada um virou uma correção e um teste.
+5. **Métricas.** Uma bateria de 20 cenários roda pelo fluxo completo com o Gemini real. Resultado: intenção certa em 20 de 20, nenhum alimento proibido e nenhum número inventado em 20 de 20, e a resposta esperada em 19 de 20. A falha e os pontos a melhorar estão nos [resultados](docs/04-metricas.md).
+6. **Pitch.** Roteiro de 3 minutos com demonstração no app ([roteiro](docs/05-pitch.md)).
+
+### O que aprendi
+
+- **Um prompt não garante uma regra.** A segurança está no código: antes da IA, que nem recebe o alimento proibido, e depois dela, que confere a resposta.
+- **Testar com o modelo de verdade é indispensável.** Os testes com um modelo falso garantem as regras; só o modelo real mostra como ele escreve na prática.
+- **Validação rígida demais também falha.** Barrar qualquer menção a "pão" impedia o NIT de explicar por que não podia sugerir pão. A regra certa é mais precisa: a pessoa pode citar o alimento, e o NIT só pode mencioná-lo numa recusa.
 
 ## Próximos passos (fora do escopo do protótipo)
 
