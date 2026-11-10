@@ -1,0 +1,17 @@
+# Segredos: a chave do Gemini fica só na sua máquina
+.env
+.streamlit/secrets.toml
+
+# Ambiente virtual do Python
+.venv/
+venv/
+
+# Arquivos gerados pelo Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Sistema e editor
+.DS_Store
+Thumbs.db
+.vscode/
